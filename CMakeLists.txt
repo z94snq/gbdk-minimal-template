@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-project(gbdk-hello-world NONE)
+project(gbdk-minimal-template NONE)
 
 # GBDK Configuration
 set(GBDK_HOME "C:/gbdk")
