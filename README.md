@@ -18,7 +18,7 @@ Edit `CMakeLists.txt` and set `GBDK_HOME` to point to your extracted GBDK path.
 
 Examples:
 - **Windows:** Extract GBDK-2020 to `C:\gbdk` and set `set(GBDK_HOME "C:/gbdk")`
-- **Ubuntu:** Extract GBDK-2020 to `~/dev/gbdk` and set `set(GBDK_HOME "~/dev/gbdk")`
+- **Ubuntu:** Extract GBDK-2020 to `~/gbdk` and set `set(GBDK_HOME "~/gbdk")`
 
 ### Quick Build
 
@@ -42,12 +42,12 @@ Example:
 ```
 
 Optional flags:
-- `clean` - Clean build artifacts before building
-- `debug` - Build in debug mode
+- `--clean` - Clean build artifacts before building
+- `--debug` - Build in debug mode
 
 Example:
 ```bash
-./build.sh clean debug
+./build.sh --clean --debug
 ```
 
 This will generate `rom.gb` in the `build` directory, which can be loaded into an emulator or flashcart.
