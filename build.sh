@@ -23,6 +23,6 @@ fi
 # Build the project
 mkdir -p build
 cd build
-cmake .. -G "Unix Makefiles" -DCMAKE_BUILD_TYPE="$BUILD_TYPE"
-make
+cmake .. -G "Ninja" -DCMAKE_BUILD_TYPE="$BUILD_TYPE"
+ninja
 cd ..

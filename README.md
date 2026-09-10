@@ -5,11 +5,11 @@ A minimal project template for GB development using GBDK-2020 and CMake.
 - Windows 11 or Ubuntu 24.04
 - GBDK-2020 >= 4.5.0
 - CMake >= 4.2.1
-- GNU Make >= 4.4.1
+- Ninja >= 1.13.2
 
 **TIPS:**
-- **Windows:** Use [Chocolatey](https://community.chocolatey.org/) to install dependencies: `choco install cmake make`
-- **Ubuntu:** Use apt to install dependencies: `sudo apt install cmake make`
+- **Windows:** Use `winget` to install dependencies: `winget install cmake Ninja-build.Ninja`
+- **Ubuntu:** Use apt to install dependencies: `sudo apt install cmake ninja-build`
 
 ## Build Instructions
 
@@ -58,8 +58,8 @@ To build manually using CMake (works on both Windows and Ubuntu):
 ```bash
 mkdir build
 cd build
-cmake .. -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release
-make
+cmake .. -G "Ninja" -DCMAKE_BUILD_TYPE=Release
+ninja
 cd ..
 ```
 
